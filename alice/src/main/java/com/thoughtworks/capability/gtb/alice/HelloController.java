@@ -10,7 +10,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(){
         RestTemplate restTemplate = new RestTemplate();
-        String result = restTemplate.getForObject("http://localhost:8081/hello", String.class);
+        String result = restTemplate.getForObject("http://bob:8081/hello", String.class);
         return result;
     }
 }
